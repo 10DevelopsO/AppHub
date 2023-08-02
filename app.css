@@ -3,6 +3,13 @@ html{
     background-repeat: no-repeat;
     height: 100%;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+body{
+    margin: 0 12px;
+    height: 100%;
+    overflow: auto;
 }
 
 .container{
@@ -19,7 +26,7 @@ html{
     background: rgba(255, 255, 255, 0.70);
     border-radius: 5%;
     padding: 6px;
-    overflow: hidden;
+    overflow-y: auto;
 }
 
 .header{
@@ -45,8 +52,6 @@ html{
 
 #details{
     margin: -2px;
-    max-height: 78%;
-    overflow: auto;
 }
 
 b, p {

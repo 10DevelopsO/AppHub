@@ -3,6 +3,12 @@ html{
     background-repeat: no-repeat;
     height: 100%;
     font-family: Arial, sans-serif;
+    overflow: hidden;
+}
+
+body{
+    margin: 0 12px;
+    height: 100%;
     overflow: auto;
 }
 
