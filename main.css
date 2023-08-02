@@ -1,0 +1,42 @@
+html{
+    background-image: linear-gradient(to right bottom, #8929ad, #773fb3, #654db6, #5658b6, #4a61b3, #376cb8, #2677b9, #1b80b9, #008fbd, #009dbe, #1dabbc, #43b7b8);
+    background-repeat: no-repeat;
+    height: 100%;
+    font-family: Arial, sans-serif;
+}
+
+h1, h2, h3, p {
+    color: white;
+}
+
+.app{
+    display: inline-flex;
+    width: 346px;
+    height: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.app-icon{
+    display: inline;
+    float: left;
+    object-fit: contain;
+    height: 80px;
+    width: 70px;
+}
+
+.app-link{
+    width: 346px;
+}
+
+.app-text{
+    display: inline;
+    float: left;
+    color: white;
+    height: 51px;
+    margin: 12px 6px;
+}
+
+.app-description{
+    color: lightgray;
+}

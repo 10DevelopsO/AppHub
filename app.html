@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>[app]</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="app.js"></script>
+        <link rel="stylesheet" href="app.css"></link>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <img id="appicon"></img>
+                <h2 id="appname">[name]</h3>
+            </div>
+            <div id="details">
+                <div class="subconainer" id="header-container">
+                    <p id="appdescription">[description]</p>
+                    <b>Version</b>
+                    <span id="appversion">[version]</span>
+                </div>
+                <h4>Screenshots</h4>
+                <div class="subconainer" id="screenshot-containter">
+                    <button id="previous-screenshot" class="screenshot-overflowbutton previous-button" onclick="PreviousPicture(this)"></button>
+                    <img class="screenshot"></img>
+                    <img class="screenshot"></img>
+                    <button id="next-screenshot" class="screenshot-overflowbutton next-button" onclick="NextPicture(this)"></button>
+                </div>
+                <h4>About</h4>
+                <div class="subconainer" id="about-container">
+                    <p>
+                        <a id="website" class="link">Website</a>
+                        <a id="source-code" class="link">Source code</a>
+                        <a id="changelog" class="link">Change Log</a>
+                    </p>
+                    <b>Developer</b>
+                    <span id="appdeveloper">[developer]</span>
+                </div>
+                <button id="action-button" mode="openapphub" onclick="DoAction(this)">Open App Hub</button>
+                <div id="installation-conatiner">
+                    <progress id="installation-progress" max="100" value="80"></progress>
+                    <div id="installation-status-conatiner">
+                        <p class="installation-status" id="installation-state">Downloading...</p>
+                        <p class="installation-status" id="installation-percentage">80%</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="overlay">
+            <button class="close-button" onclick="CloseGallery()"></button> 
+
+            <button id="gallery-previous" class="screenshot-overflowbutton previous-button" onclick="PreviousGalleryPicture()"></button>
+            <button id="gallery-next" class="screenshot-overflowbutton next-button" onclick="NextGalleryPicture()"></button>
+            
+            <div class="gallery-container">
+                <img class="screenshot-full">
+            </div>
+            <div class="gallery-container">
+                <img class="screenshot-full">
+            </div>
+        </div>
+    </body>
+</html>

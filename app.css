@@ -1,0 +1,266 @@
+html{
+    background-image: linear-gradient(to right bottom, #8929ad, #773fb3, #654db6, #5658b6, #4a61b3, #376cb8, #2677b9, #1b80b9, #008fbd, #009dbe, #1dabbc, #43b7b8);
+    background-repeat: no-repeat;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+.container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    width: 92vw;
+    height: 92vh;
+    max-width: 520px;
+    max-height: 520px;
+    background: rgba(255, 255, 255, 0.70);
+    border-radius: 5%;
+    padding: 6px;
+    overflow: hidden;
+}
+
+.header{
+    display: table;
+    width: 100%;
+    height: 100px;
+}
+
+#appicon{
+    margin-left: -6px;
+    height: 100px;
+    display: table-cell;
+}
+
+#appname{
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.subconainer{
+    margin: 8px 10px;
+}
+
+#details{
+    margin: -2px;
+    max-height: 78%;
+    overflow: auto;
+}
+
+b, p {
+    margin: 6px;
+}
+
+h4{
+    margin: 4px;
+}
+
+a{
+    border-bottom: 1px solid;
+    color: #090853;
+    text-decoration: none;
+    padding: .4px;
+}
+
+a:hover{
+    color: #43b7b8;
+}
+
+#screenshot-containter{
+    display: flex;
+
+    padding: 0px 6px;
+    align-items: center;
+}
+
+.screenshot{
+    display: none;
+
+    cursor: pointer;
+    max-height: 140px;
+    padding: 2px;
+}
+
+.screenshot-overflowbutton{
+    border: silver solid 1px;
+    background: rgb(243, 243, 243);
+    margin-left: 4px;
+    height: 130px;
+    width: 30px;
+    z-index: 2;
+}
+
+.screenshot-overflowbutton::before {
+    position: relative;
+    /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
+    content: "";
+    display: inline-block;
+    /* By using an em scale, the arrows will size with the font */
+    width: 1em;
+    height: 1em;
+    border-right: 0.4em solid rgb(114, 114, 114);
+    border-top: 0.4em solid rgb(114, 114, 114);
+}
+
+.screenshot-overflowbutton:hover{
+    background: rgb(200, 200, 200);
+}
+
+.previous-button::before{
+    margin-right: -.5em;
+    transform: rotate(-135deg);
+}
+
+.next-button::before{
+    margin-left: -.5em;
+    transform: rotate(45deg);
+}
+
+.link{
+    visibility: collapse;
+}
+
+#action-button{
+    display: block;
+
+    margin: 0 auto;
+    height: 50px;
+    color: white;
+    border: solid violet 4px;
+    border-radius: 4px;
+    width: 200px;
+    font-size: 1em;
+}
+
+#action-button:hover, #action-button:focus, #action-button:active{
+    border-color: purple;
+}
+
+#action-button[mode="openapphub"]{
+    background: #008fbd;
+}
+
+#action-button[mode="openapphub"]:hover, #action-button[mode="openapphub"]:focus, #action-button[mode="openapphub"]:active{
+    background: #00506b;
+}
+
+#action-button[mode="install"]{
+    background: #06c206;
+}
+
+#action-button[mode="install"]:hover, #action-button[mode="install"]:focus, #action-button[mode="install"]:active{
+    background: #056305;
+}
+
+#installation-conatiner{
+    display: none;
+
+    margin: 0 auto;
+}
+
+#installation-progress{
+    display: block;
+    margin: 0 auto;
+    appearance: none;
+    color: white;
+    border: solid silver 2px;
+    background-color: white;
+    border-radius: 4px;
+    height: 20px;
+    max-width: 400px;
+    min-width: 240px;
+}
+
+#installation-progress::-moz-progress-bar{
+    background-color: #00ff00;
+}
+
+#installation-status-conatiner{
+    margin: 0 auto;
+    text-align: center;
+}
+
+.installation-status{
+    display: inline-block;
+
+    margin: 8px auto;
+}
+
+.overlay {
+    display: none;
+
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0,0,0,0.8);
+    z-index: 1;
+    cursor: pointer;
+}
+
+.gallery-container{
+    display: none;
+
+    height: 100%;
+    width: 100%;
+    align-items: center; /* vertical */
+    justify-content: center;
+}
+
+.gallery-container img{
+    max-height: 100vh;
+    max-width: 90vw;
+}
+
+.close-button{
+    position: absolute;
+    right: 0;
+    height: 48px;
+    width: 48px;
+    color: #fff;
+    border: transparent;
+    background: transparent;
+}
+
+.close-button::before {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    content: "\d7"; /* use the hex value here... */
+    font-size: 3.6em;
+    line-height: 40px;
+    text-align: center;
+}
+
+.close-button:active{
+    color: #C31432;
+}
+
+@media (hover: hover){
+    .close-button:hover{
+        color: #C31432;
+    }
+}
+
+#gallery-previous{
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 0;
+}
+
+#gallery-next{
+    display: none;
+
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
+}

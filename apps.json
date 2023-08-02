@@ -1,0 +1,26 @@
+[
+    {
+        "id": "0",
+        "Name": "Textie Editor",
+        "Description": "Free and open sourced text editor",
+        "Version": "0.9.6",
+        "Developer": "10Develops",
+        "Website": "https://10develops.github.io/textie/",
+        "Sourcecode": "https://github.com/10Develops/textie",
+        "Changelog": "",
+        "Location": "",
+        "Screenshot": [ "screenshot1.png", "screenshot2.png" ]
+    },
+    {
+        "id": "1",
+        "Name": "Onitor Browser",
+        "Description": "Free and open sourced web browser",
+        "Version": "0.9.6",
+        "Developer": "10Develops",
+        "Website": "https://10develops.github.io/onitor/",
+        "Sourcecode": "https://github.com/10Develops/onitor",
+        "Changelog": "",
+        "Location": "",
+        "Screenshot": [ "screenshot1.png", "screenshot2.png" ]
+    }
+]
