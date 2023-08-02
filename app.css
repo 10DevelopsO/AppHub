@@ -1,15 +1,17 @@
 html{
     background-image: linear-gradient(to right bottom, #8929ad, #773fb3, #654db6, #5658b6, #4a61b3, #376cb8, #2677b9, #1b80b9, #008fbd, #009dbe, #1dabbc, #43b7b8);
     background-repeat: no-repeat;
-    height: 100vh;
+    height: 100%;
     font-family: Arial, sans-serif;
 }
 
 .container{
     position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%,-50%);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    margin: auto;   
     width: 92vw;
     height: 92vh;
     max-width: 520px;
