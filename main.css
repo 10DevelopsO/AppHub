@@ -3,6 +3,7 @@ html{
     background-repeat: no-repeat;
     height: 100%;
     font-family: Arial, sans-serif;
+    overflow: auto;
 }
 
 h1, h2, h3, p {
