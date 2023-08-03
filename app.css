@@ -88,15 +88,6 @@ a:hover{
     padding: 2px;
 }
 
-.screenshot-overflowbutton{
-    border: silver solid 1px;
-    background: rgb(243, 243, 243);
-    margin-left: 4px;
-    height: 130px;
-    width: 30px;
-    z-index: 2;
-}
-
 .screenshot-overflowbutton::before {
     position: relative;
     /* top: 3pt; Uncomment this to lower the icons as requested in comments*/
@@ -107,6 +98,14 @@ a:hover{
     height: 1em;
     border-right: 0.4em solid rgb(114, 114, 114);
     border-top: 0.4em solid rgb(114, 114, 114);
+}
+
+.screenshot-overflowbutton{
+    border: silver solid 1px;
+    background: rgb(243, 243, 243);
+    margin-left: 4px;
+    height: 130px;
+    width: 30px;
 }
 
 .screenshot-overflowbutton:hover{
