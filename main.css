@@ -25,7 +25,7 @@ h1, h2, h3, p {
 }
 
 .app:hover{
-    background: #80808060;
+    background: rgba(128, 128, 128, 0.376);
 }
 
 .app-icon{
