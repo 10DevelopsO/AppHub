@@ -2,7 +2,8 @@
     {
         "id": "0",
         "Name": "Textie Editor",
-        "Description": "Free and open sourced text editor",
+        "Category": "Text editor",
+        "Description": "Free and open sourced text editor.",
         "Version": "0.9.6",
         "Developer": "10Develops",
         "Website": "https://10develops.github.io/textie/",
@@ -14,7 +15,8 @@
     {
         "id": "1",
         "Name": "Onitor Browser",
-        "Description": "Free and open sourced web browser",
+        "Category": "Web browser",
+        "Description": "Free and open sourced web browser.",
         "Version": "0.9.6",
         "Developer": "10Develops",
         "Website": "https://10develops.github.io/onitor/",

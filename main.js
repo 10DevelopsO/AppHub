@@ -35,8 +35,8 @@ request.onreadystatechange = function() {
             appNameElement.innerText = JSONstr[i].Name;
 
             var appDescriptionElement = document.createElement('p');
-            appDescriptionElement.setAttribute('class', "app-description");
-            appDescriptionElement.innerText = JSONstr[i].Description;
+            appDescriptionElement.setAttribute('class', "app-category");
+            appDescriptionElement.innerText = JSONstr[i].Category;
 
             appTextElement.appendChild(appNameElement);
             appTextElement.appendChild(appDescriptionElement);

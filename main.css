@@ -18,10 +18,14 @@ h1, h2, h3, p {
 
 .app{   
     display: inline-flex;
-    width: 346px;
+    width: 240px;
     height: 80px;
     justify-content: center;
     align-items: center;
+}
+
+.app:hover{
+    background: #80808060;
 }
 
 .app-icon{
@@ -44,6 +48,6 @@ h1, h2, h3, p {
     margin: 12px 6px;
 }
 
-.app-description{
+.app-category{
     color: lightgray;
 }
