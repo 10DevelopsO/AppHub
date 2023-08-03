@@ -31,9 +31,7 @@ h1, h2, h3, p {
 .app-icon{
     display: inline;
     float: left;
-    object-fit: contain;
-    height: 80px;
-    width: 70px;
+    width: 80px;
 }
 
 .app-link{
